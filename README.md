@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# React testing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Jest
 
-## Available Scripts
+Jest is a javascript testing framework.
 
-In the project directory, you can run:
+Jest is a test runner that finds tests, runs the test, determines whether the tests passed or failed and reports it back in a human readable manner.
 
-### `yarn start`
+## React Testing Library (RTL)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Javascript testing utitlity that provides virtual DOM for testing react components.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+React Testing library provides a virtual DOM which we can use to interact with and verify the behaviour of a react component.
 
-### `yarn test`
+Testing Library is infact a family of packages which helps test UI components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The core library is called DOM Testing library and RTL is simply wrapper around this core library to test React applications in a easier way.
 
-### `yarn build`
+## Types of Test
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Unit Test
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Focus is on testing the individual building blocks of an application such as a class or function or a component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Each unit or building block is tested in isolation, independent of other units.
 
-### `yarn eject`
+Dependencies are mocked.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run in a short amount of time and make it very easy to pinpoint failure.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Relatively easier to write and maintain.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 2. Integration Test
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Focus is on testinf a combination of units and ensuring they work together.
 
-## Learn More
+Take longer than unit tests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. E2E TEst
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+End to End test
+
+Focus is on testing the entire application flow and ensuring it works as designed from start to finish.
+
+Involves in a real UI, a real backend database, real services etc.
+
+Take the longest as thet cover the most amount of code.
+
+Have a cost implication as you interact with real APIs that may charge based on the number of requests.
