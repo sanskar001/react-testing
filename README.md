@@ -47,3 +47,15 @@ Involves in a real UI, a real backend database, real services etc.
 Take the longest as thet cover the most amount of code.
 
 Have a cost implication as you interact with real APIs that may charge based on the number of requests.
+
+## Test Driven Development (TDD)
+
+Test driven development is a software development process where you write tests before writing the software code.
+
+Once the tests have been written tou then write the code to ensure the tests pass.
+
+1. Create tests that verify the functionality of a specify feature.
+2. Write software code thet will run the tests successfully when re-execute.
+3. Refactor the code for optimization while ensuring the tests continue to pass.
+
+Also called red-green testing as all tests go from a red failed state to a green passed state.
