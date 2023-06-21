@@ -59,3 +59,32 @@ Once the tests have been written tou then write the code to ensure the tests pas
 3. Refactor the code for optimization while ensuring the tests continue to pass.
 
 Also called red-green testing as all tests go from a red failed state to a green passed state.
+
+## Note: You can use "it()" method in place of "test()" for testing.
+
+## Code Coverage
+
+A metric that can help you understand how much of your software code is tested.
+
+Types:
+
+1. Statement coverage.
+2. Branches coverage.
+3. Function coverage.
+4. Line coverage.
+
+Run: "yarn test --coverage --watchAll"
+Run: "yarn test --coverage --watchAll --collectCoverageFrom='src/components/\*_/_.{tsx, ts}'"
+
+## What to test in react
+
+1. Test component renders.
+2. Test component render with props.
+3. Test component render with state.
+4. Test component reacts to event.
+
+## What not to test in react.
+
+1. Third party library
+2. Implementation detail.
+3. Code that does matter to user point view.
